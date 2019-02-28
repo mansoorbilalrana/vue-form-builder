@@ -1,8 +1,7 @@
 <template>
     <div>
         <div class="row">
-
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <select class="form-control" v-model="form.layout">
                     <option value="" disabled selected>Select layout</option>
                     <option v-for="(value, key) in layouts" :value="key">{{value}} layout</option>
@@ -23,7 +22,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <input type="text" class="form-control" placeholder="Section Label" v-model="section.label">
                             </div>
                             <div class="col-md-8 text-right">
